@@ -10,25 +10,30 @@ const UpBar = () => {
       
       const NavLink: React.FC<NavLinkProps> = ({ href, label }) => (
         <Link legacyBehavior href={href}>
-          <a className="text-black hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">
+          <a className="text-black hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium">
             {label}
           </a>
         </Link>
       );
 
 return (
-    <header className="bg-white w-full h-20 flex flex-row ">
+    <header className="bg-white w-full h-20 flex flex-row justify-between ">
         <img src="/logo-moic.svg" className={'h-20 w-36 flex justify-center ml-16'} alt="" />
-        <div className="flex justify-end w-full content-center">
-            <nav className="md:flex flex self-center mr-12">
+        <div className="flex flex-row justify-center ">
+            <nav className="md:flex flex self-center justify-self-center mr-8 space-x-11">
                 <NavLink href="/" label="Home" />
                 <NavLink href="/" label="Partners" />
                 <NavLink href="/" label="Cases" />
                 <NavLink href="/" label="Solutions" />
                 <NavLink href="/" label="Team" />
             </nav>
-           <img src="/logo_twitter.png" className={'h-10 w-10 flex self-center mr-16'} alt="" /> 
         </div>
+        
+    
+        <Link href="https://x.com/moic_digital" className="self-center">
+            <img src="/logo_twitter.png" className={'h-9 w-9 flex self-center mr-16'} alt="" /> 
+        </Link>
+
         
     </header>
 );
