@@ -17,7 +17,7 @@ const UpBar = () => {
       );
 
 return (
-    <header className="bg-white w-full h-20 flex flex-row justify-between ">
+    <header className="bg-white w-full h-20 flex flex-row justify-between shadow-md z-10">
         <img src="/logo-moic.svg" className={'h-20 w-36 flex justify-center ml-16'} alt="" />
         <div className="flex flex-row justify-center ">
             <nav className="md:flex flex self-center justify-self-center mr-8 space-x-11">
